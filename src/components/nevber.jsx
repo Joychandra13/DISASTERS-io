@@ -1,8 +1,15 @@
-import React from 'react'
-
+import React, { useState } from 'react';
+import { nevItems } from './lib/data'
 
 export const Nev = ()=> {
-  return (
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+ return (
     <div>
         <nav className='bg-[#E4E4E780] py-[25px]'>
             <div className='container mx-auto flex justify-between items-center'>
@@ -18,6 +25,15 @@ export const Nev = ()=> {
                     ))}
                 </div>
 
+      {/* Hamburger Menu for Mobile */}
+        <div className="lg:hidden flex items-center">
+            <button onClick={toggleMenu} className="focus:outline-none">
+              <svg className="w-6 h-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+
                 <div className='flex items-center'>
                     <img className='w-[40px] h-[40px]' src="/2.png" alt="" />
                     <img className='w-[40px] h-[40px]' src="/3.png" alt="" />
@@ -27,37 +43,25 @@ export const Nev = ()=> {
                     </div>
                 </div>
             </div>
+
         </nav>
+
+        {/* Mobile Menu */}
+      {isOpen && (
+        <div className="lg:hidden bg-white shadow-md">
+          <div className="flex flex-col p-4">
+            {nevItems.map(({ href, label }, i) => (
+              <a href={href} key={i} onClick={() => setIsOpen(false)}>
+                <p className="text-accent text-sm text-secondary font-normal hover:text-primary hover:font-bold transition-colors duration-150">
+                  {label}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
         <div className='border-b border-[#E4E4E7]'></div>
     </div>
-  )
-}
-
-
-
-const nevItems = [
-    {
-      label: "Dashboard",
-      href: "/",
-    },
-    {
-      label: "Incidents",
-      href: "/",
-    },
-    {
-      label: "Locations",
-      href: "/",
-    },
-    {
-      label: "Activities",
-      href: "/",
-    },
-    {
-      label: "Documents",
-      href: "/",
-    },
-    {
-        label: "Cypher AI",
-        href: "/",
-      },
-  ];
+  );
+};
