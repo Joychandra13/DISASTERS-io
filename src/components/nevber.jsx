@@ -12,7 +12,7 @@ export const Nev = ()=> {
  return (
     <div>
         <nav className='bg-[#E4E4E780] py-[25px]'>
-            <div className='container mx-auto flex justify-between items-center'>
+            <div className='container md:mx-auto ms-[20%] md:flex justify-between items-center'>
                 <img src="/logo1.png" alt="logo" className='w-[131px] h-[36px]'/>
 
                 <div className="hidden lg:flex justify-center items-center gap-3 xl:gap-[35px]">
@@ -24,7 +24,7 @@ export const Nev = ()=> {
                     </a>
                     ))}
                 </div>
-
+<div className='flex gap-3 mt-3'>
       {/* Hamburger Menu for Mobile */}
         <div className="lg:hidden flex items-center">
             <button onClick={toggleMenu} className="focus:outline-none">
@@ -43,7 +43,7 @@ export const Nev = ()=> {
                     </div>
                 </div>
             </div>
-
+   </div>
         </nav>
 
         {/* Mobile Menu */}
