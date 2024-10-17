@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { nevItems } from './lib/data'
+// import { nevItems } from './lib/data'
+import { Link } from 'react-router-dom';
+import './nav.css'
+
 
 export const Nev = ()=> {
 
@@ -15,14 +18,23 @@ export const Nev = ()=> {
             <div className='container md:mx-auto ms-[20%] md:flex justify-between items-center'>
                 <img src="/logo1.png" alt="logo" className='w-[131px] h-[36px]'/>
 
-                <div className="hidden lg:flex justify-center items-center gap-3 xl:gap-[35px]">
-                    {nevItems.map(({ href, label }, i) => (
+                <div>
+                  <ul className="hidden lg:flex justify-center items-center gap-3 xl:gap-[35px]">
+                    <li className='nav-link'><Link to="/">Dashboard</Link></li>
+                    <li className='nav-link'><Link to="Incidents">Incidents</Link></li>
+                    <li className='nav-link'><Link to="Locations">Locations</Link></li>
+                    <li className='nav-link'><Link to="Activities">Activities</Link></li>
+                    <li className='nav-link'><Link to="Documents">Documents</Link></li>
+                    <li className='nav-link'><Link to="CypherAI">Cypher AI</Link></li>
+
+                  </ul>
+                    {/* {nevItems.map(({ href, label }, i) => (
                     <a href={href} key={i}>
-                    <p className="text-accent text-sm text-secondary font-normal hover:text-primary hover:font-bold active:underline transition-colors duration-150">
+                    <p className="text-accent text-sm text-secondary font-normal nav-link hover:font-bold hover:text-primary ">
                         {label}
                     </p>
                     </a>
-                    ))}
+                    ))} */}
                 </div>
 <div className='flex gap-3 mt-3'>
       {/* Hamburger Menu for Mobile */}

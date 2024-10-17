@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 export const nevItems = [
     {
       label: "Dashboard",
-      href: "/",
+      Link: "/",
     },
     {
       label: "Incidents",
