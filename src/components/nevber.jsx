@@ -26,16 +26,9 @@ export const Nev = ()=> {
                     <li className='nav-link'><Link to="Activities">Activities</Link></li>
                     <li className='nav-link'><Link to="Documents">Documents</Link></li>
                     <li className='nav-link'><Link to="CypherAI">Cypher AI</Link></li>
-
                   </ul>
-                    {/* {nevItems.map(({ href, label }, i) => (
-                    <a href={href} key={i}>
-                    <p className="text-accent text-sm text-secondary font-normal nav-link hover:font-bold hover:text-primary ">
-                        {label}
-                    </p>
-                    </a>
-                    ))} */}
                 </div>
+                
 <div className='flex gap-3 mt-3'>
       {/* Hamburger Menu for Mobile */}
         <div className="lg:hidden flex items-center">

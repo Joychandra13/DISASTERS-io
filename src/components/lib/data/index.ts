@@ -68,3 +68,22 @@ export const nevItems = [
   ];
 
 
+  export const NewIncidentCards = [
+    {
+      img: "/Frame(2).png",
+      title: "What type of incident?",
+      des: "Choose the category that best describes the incident.",
+    },
+    {
+      img: "/Frame(3).png",
+      title: "Tell us about the incident?",
+      des: "Let’s connect the dots and see where to start.",
+    },
+    {
+      img: "/Frame(4).png",
+      title: "Where did the incident occur?",
+      des: "Lorem ipsum dolar sit general sac mascho werho",
+    },
+  ];
+
+

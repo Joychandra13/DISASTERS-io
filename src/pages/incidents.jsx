@@ -2,8 +2,10 @@ import React from 'react'
 import Search from '../components/common/searchincident'
 import { Button } from '../components/common/button'
 import { Card } from '../components/common/card'
+import { Link } from 'react-router-dom';
 
 function Incidents() {
+
   return (
     <div>
       <div className='bg-[#E4E4E780]'>
@@ -14,7 +16,7 @@ function Incidents() {
       </div>
       <div className='md:flex gap-3  items-center'>
          <Search/>
-        <Button className=' mt-3 md:mt-0 '>+ New Incident</Button>
+        <Button className=' mt-3 md:mt-0 '><Link to="/NewIncident">+ New Incident</Link></Button>
       </div>
       </div>
       </div>
