@@ -3,8 +3,6 @@ import Search from '../components/common/searchincident'
 import { Button } from '../components/common/button'
 import { Card } from '../components/common/card'
 import { Link } from 'react-router-dom';
-import Error from './error';
-
 function Incidents() {
 
   return (
@@ -22,7 +20,6 @@ function Incidents() {
       </div>
       </div>
       <Card/>
-      <Error/>
     </div>
   )
 }
