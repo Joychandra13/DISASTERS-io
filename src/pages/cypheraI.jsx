@@ -1,8 +1,11 @@
 import React from 'react'
+import Error from './error'
 
 function CypherAI() {
   return (
-    <div>CypherAI</div>
+    <div>
+        <Error/>
+    </div>
   )
 }
 

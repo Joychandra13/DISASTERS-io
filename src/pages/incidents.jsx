@@ -3,6 +3,7 @@ import Search from '../components/common/searchincident'
 import { Button } from '../components/common/button'
 import { Card } from '../components/common/card'
 import { Link } from 'react-router-dom';
+import Error from './error';
 
 function Incidents() {
 
@@ -16,11 +17,12 @@ function Incidents() {
       </div>
       <div className='md:flex gap-3  items-center'>
          <Search/>
-        <Button className=' mt-3 md:mt-0 '><Link to="/NewIncident">+ New Incident</Link></Button>
+         <Link to="/NewIncident"><Button className=' mt-3 md:mt-0 '>+ New Incident</Button></Link>
       </div>
       </div>
       </div>
       <Card/>
+      <Error/>
     </div>
   )
 }

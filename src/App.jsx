@@ -8,6 +8,7 @@ import Activities from './pages/activities'
 import Documents from './pages/documents'
 import CypherAI from './pages/cypheraI'
 import NewIncident from './pages/subpage.jsx/newincident'
+import Error from './pages/error'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="Documents" element={<Documents/>} />
         <Route path="CypherAI" element={<CypherAI/>} />
         <Route path="NewIncident" element={<NewIncident/>} />
+        <Route path="*" element={<Error/>} />
       </Routes>
     </BrowserRouter>
 

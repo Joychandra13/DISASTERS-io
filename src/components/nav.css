@@ -1,5 +1,5 @@
 .nav-link {
-    @apply relative text-secondary text-sm no-underline hover:font-bold hover:text-primary;
+    @apply relative text-secondary text-sm no-underline hover:font-bold hover:text-primary ;
   }
   
   .nav-link::after {

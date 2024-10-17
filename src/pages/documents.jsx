@@ -1,8 +1,11 @@
 import React from 'react'
+import Error from './error'
 
 function Documents() {
   return (
-    <div>Documents</div>
+    <div>
+        <Error/>
+    </div>
   )
 }
 

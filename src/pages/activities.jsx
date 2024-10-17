@@ -1,8 +1,11 @@
 import React from 'react'
+import Error from './error'
 
 function Activities() {
   return (
-    <div>Activities</div>
+    <div>
+        <Error/>
+    </div>
   )
 }
 
