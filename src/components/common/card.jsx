@@ -3,6 +3,9 @@ import { CardSolution } from "./cardsection";
 import { NewIncidentCards } from "../lib/data";
 import { NewIncidentCardSolution } from "./cardsection";
 import { LocationsCards } from "../lib/data";
+import { ActivitiesCardSolution } from "./cardsection";
+import { LocationsActivitiesCards } from "../lib/data";
+import { LocationsDocumentsCards } from "../lib/data";
 
 export const Card = () => {
   return (
@@ -40,6 +43,34 @@ export const LocationsCard = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5 lg:gap-[17.5px]">
           {LocationsCards.map((LocationsCard, i) => (
             <CardSolution key={i} {...LocationsCard} />
+          ))}
+        </div>
+        </div>
+    </section>
+  );
+};
+
+export const ActivitiesCard = () => {
+  return (
+    <section className="pt-[15px]">
+        <div >
+        <div className=" place-items-center gap-5 lg:gap-[17.5px]">
+          {LocationsActivitiesCards.map((ActivitiesCard, i) => (
+            <ActivitiesCardSolution key={i} {...ActivitiesCard} />
+          ))}
+        </div>
+        </div>
+    </section>
+  );
+};
+
+export const DocumentsCard = () => {
+  return (
+    <section className="pt-[15px]">
+        <div >
+        <div className="place-items-center gap-5 lg:gap-[17.5px]">
+          {LocationsDocumentsCards.map((DocumentsCard, i) => (
+            <ActivitiesCardSolution key={i} {...DocumentsCard} />
           ))}
         </div>
         </div>

@@ -129,3 +129,19 @@ export const nevItems = [
       money:"$1,456,654.00",
     },
   ];
+
+  export const LocationsDocumentsCards = [
+    {
+      img: "/LocationsCards3.png",
+      title: "Documents name",
+      des: "Location name • 16.12212, -122.1424",
+      money:"$1,456,654.00",
+    },
+    {
+      img: "/LocationsCards3.png",
+      title: "Documents name",
+      des: "Location name • 16.12212, -122.1424",
+      money:"$1,456,654.00",
+    },
+  ];
+

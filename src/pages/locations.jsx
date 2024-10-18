@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../components/common/button'
 import Search from '../components/common/searchincident'
-import { LocationsCard } from '../components/common/card'
+import { ActivitiesCard, DocumentsCard, LocationsCard } from '../components/common/card'
 
 function Locations() {
   return (
@@ -21,7 +21,7 @@ function Locations() {
                 </div>
             </div>
         </div>
-        <div className=' grid grid-cols-12 container mx-auto'>
+        <div className=' grid grid-cols-12 container mx-auto mb-[80px]'>
             <div className='md:col-span-6 col-span-12 mx-auto md:mx-0'>
             <div className='flex items-center gap-3 mt-10'>
                 <img src="/11.png" alt="" />
@@ -51,6 +51,19 @@ function Locations() {
                 <LocationsCard/>
             </div>
             <hr className='my-[40px]' />
+            <div>
+                <div className='flex justify-between'>
+                    <p className='text-sm text-primary font-bold'>Activities</p>
+                    <p className='text-sm text-secondary'><u>See all</u></p>
+                </div>
+                <ActivitiesCard/>
+                <hr className='my-[40px]' />
+                <div className='flex justify-between'>
+                    <p className='text-sm text-primary font-bold'>Documents</p>
+                    <p className='text-sm text-secondary'><u>See all</u></p>
+                </div>
+                <DocumentsCard/>
+            </div>
             </div>
 
 

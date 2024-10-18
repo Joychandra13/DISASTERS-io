@@ -22,3 +22,17 @@ export const NewIncidentCardSolution= ({ title, img, des}) => (
         </div>
     </div>
   );
+
+
+  export const ActivitiesCardSolution= ({ title, img, des, money }) => (
+    <div >
+        <div className="mt-4 py-[15px] px-[10px] flex bg-[#F4F4F5] rounded-[10px]">
+            <img src={img} alt= {title} />
+            <div className="ms-[20px] ">
+                <h1 className="font-bold text-[16px] text-primary">{title}</h1>
+                <p className="text-[14px] text-secondary">{des}</p>
+                <h1 className="font-bold text-[16px] text-primary">{money}</h1>
+            </div>
+        </div>
+    </div>
+  );
