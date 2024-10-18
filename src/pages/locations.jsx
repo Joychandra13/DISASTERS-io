@@ -67,10 +67,6 @@ function Locations() {
             </div>
 
 
-
-
-
-
             <div className='md:col-span-6 col-span-12'>
                 <div className='md:ms-[94px] mt-[40px]  mx-auto md:mx-0'>
                     <p className='text-sm text-secondary mb-[20px]'>Incident Map</p>

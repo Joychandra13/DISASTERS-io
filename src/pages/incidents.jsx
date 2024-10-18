@@ -3,6 +3,7 @@ import Search from '../components/common/searchincident'
 import { Button } from '../components/common/button'
 import { Card } from '../components/common/card'
 import { Link } from 'react-router-dom';
+import ProgressBar from './subpage.jsx/progress bar';
 function Incidents() {
 
   return (
@@ -20,6 +21,7 @@ function Incidents() {
       </div>
       </div>
       <Card/>
+      <ProgressBar/>
     </div>
   )
 }
