@@ -3,7 +3,7 @@ import Error from './error'
 
 function Activities() {
   return (
-    <div>
+    <div className='overflow-hidden font-Onest'>
         <Error/>
     </div>
   )

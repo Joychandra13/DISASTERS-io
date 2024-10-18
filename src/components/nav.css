@@ -10,3 +10,7 @@
   .nav-link:hover::after {
     @apply w-full;
   }
+
+  .mobil-nav-link{
+    @apply relative text-secondary text-sm no-underline hover:font-bold hover:text-primary ;
+  }

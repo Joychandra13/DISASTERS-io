@@ -4,7 +4,7 @@ import { Button } from '../../components/common/button'
 
 function NewIncident() {
   return (
-    <div className='font-Onest'>
+    <div className='font-Onest overflow-hidden'>
         <div className='text-center mt-[85px]'>
             <h1 className='text-[32px] font-bold text-primary'>Let’s get started</h1>
             <p className='text-base text-secondary mt-[14px] px-3'>

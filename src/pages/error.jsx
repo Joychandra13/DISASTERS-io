@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Error() {
   return (
-    <div className='font-Onest'>
+    <div className='font-Onest overflow-hidden '>
         <div className='flex justify-center mt-20'>
             <img src="/404.png" alt="" />
         </div>
