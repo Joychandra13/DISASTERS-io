@@ -86,4 +86,46 @@ export const nevItems = [
     },
   ];
 
+  export const LocationsCards = [
+    {
+      img: "/LocationsCards1.png",
+      title: "Whitechapel Rd.",
+      des: "Tulare County, Los Angles, CA 23415",
+      money:"$1,456,654.00",
+    },
+    {
+      img: "/LocationsCards2.png",
+      title: "Whitechapel Rd.",
+      des: "Tulare County, Los Angles, CA 23415",
+      money:"$1,456,654.00",
+    },
+    {
+      img: "/LocationsCards1.png",
+      title: "Whitechapel Rd.",
+      des: "Tulare County, Los Angles, CA 23415",
+      money:"$1,456,654.00",
+    },
+    {
+      img: "/LocationsCards1.png",
+      title: "Whitechapel Rd.",
+      des: "Tulare County, Los Angles, CA 23415",
+      money:"$1,456,654.00",
+    },
 
+  ];
+
+
+  export const LocationsActivitiesCards = [
+    {
+      img: "/LocationsCards3.png",
+      title: "Activity name",
+      des: "Location name • 16.12212, -122.1424",
+      money:"$1,456,654.00",
+    },
+    {
+      img: "/LocationsCards3.png",
+      title: "Activity name",
+      des: "Location name • 16.12212, -122.1424",
+      money:"$1,456,654.00",
+    },
+  ];

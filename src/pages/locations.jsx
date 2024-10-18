@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../components/common/button'
 import Search from '../components/common/searchincident'
+import { LocationsCard } from '../components/common/card'
 
 function Locations() {
   return (
@@ -42,7 +43,21 @@ function Locations() {
                 <p className='text-sm text-secondary'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werho</p>
             </div>
             <hr className='my-[40px]' />
+            <div>
+                <div className='flex justify-between'>
+                    <p className='text-sm text-primary font-bold'>Locations</p>
+                    <p className='text-sm text-secondary'><u>See all</u></p>
+                </div>
+                <LocationsCard/>
             </div>
+            <hr className='my-[40px]' />
+            </div>
+
+
+
+
+
+
             <div className='md:col-span-6 col-span-12'>
                 <div className='md:ms-[94px] mt-[40px]  mx-auto md:mx-0'>
                     <p className='text-sm text-secondary mb-[20px]'>Incident Map</p>

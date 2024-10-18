@@ -2,6 +2,7 @@ import { cards } from "../lib/data";
 import { CardSolution } from "./cardsection";
 import { NewIncidentCards } from "../lib/data";
 import { NewIncidentCardSolution } from "./cardsection";
+import { LocationsCards } from "../lib/data";
 
 export const Card = () => {
   return (
@@ -24,6 +25,21 @@ export const NewIncidentCard = () => {
         <div className="container md:flex mx-auto justify-center gap-5 lg:gap-[25px] ">
           {NewIncidentCards.map((NewIncidentCard, i) => (
             <NewIncidentCardSolution key={i} {...NewIncidentCard} />
+          ))}
+        </div>
+        </div>
+    </section>
+  );
+};
+
+
+export const LocationsCard = () => {
+  return (
+    <section className="pt-[15px]">
+        <div >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5 lg:gap-[17.5px]">
+          {LocationsCards.map((LocationsCard, i) => (
+            <CardSolution key={i} {...LocationsCard} />
           ))}
         </div>
         </div>
