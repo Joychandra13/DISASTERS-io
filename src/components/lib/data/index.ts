@@ -145,3 +145,80 @@ export const nevItems = [
     },
   ];
 
+
+  export const IncidentIconCards = [
+    {
+      img: "/Avalanche.svg",
+      title: "Avalanche",
+    },
+    {
+      img: "/Biological.svg",
+      title: "Biological",
+    },
+    {
+      img: "/Blizzard.svg",
+      title: "Blizzard",
+    },
+    {
+      img: "/ColdFreezing.svg",
+      title: "Cold/Freezing",
+    },
+    {
+      img: "/Drought.svg",
+      title: "Drought",
+    },
+    {
+      img: "/1(6).svg",
+      title: "Earthquake",
+    },
+    {
+      img: "/1(7).svg",
+      title: "Flooding",
+    },
+    {
+      img: "/1(8).svg",
+      title: "Heat Wave",
+    },
+    {
+      img: "/1(9).svg",
+      title: "Hail",
+    },
+    {
+      img: "/1(10).svg",
+      title: "Lightning",
+    },
+    {
+      img: "/1(11).svg",
+      title: "Man Made",
+    },
+    {
+      img: "/1(12).svg",
+      title: "Mudslide",
+    },
+    {
+      img: "/1(13).svg",
+      title: "Severe Storm",
+    },
+    {
+      img: "/1(13).svg",
+      title: "Strong Wind",
+    },
+    {
+      img: "/1(14).svg",
+      title: "Tornado",
+    },
+    {
+      img: "/1(15).svg",
+      title: "Tsunami",
+    },
+    {
+      img: "/1(1).svg",
+      title: "Volcanic Eruption",
+    },
+    {
+      img: "/1(16).svg",
+      title: "Wildfire",
+    },
+
+  ];
+

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IncidentIconCard } from "../../components/common/card";
 
 const ProgressBarWithSteps = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -30,23 +31,10 @@ const ProgressBarWithSteps = () => {
     switch (currentStep) {
       case 1:
         return (
-          <div className="grid grid-cols-3 gap-4">
-            {/* Selectable Cards */}
-            {[1, 2, 3].map((card, index) => (
-              <div
-                key={index}
-                onClick={() => selectCard(index)} // Handle card click
-                className={`border p-4 text-center cursor-pointer rounded-md transition-colors ${
-                  selectedCard === index
-                    ? "bg-orange-500 text-white" // Selected card styles
-                    : "bg-white hover:bg-orange-100" // Hover color
-                }`}
-              >
-                {`Card ${card}`}
-              </div>
-            ))}
-          </div>
-        );
+            <div >
+                <IncidentIconCard />
+            </div>
+          );
       case 2:
         return (
           <form className="space-y-4">
@@ -83,12 +71,12 @@ const ProgressBarWithSteps = () => {
   if (!isOpen) return null; // Return null if the component is closed
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="overflow-hidden" >
       
 
       {/* Progress Bar and Buttons Container */}
       <div className="bg-[#f2f2f3] w-full">
-            <div className="mx-auto gap-[123px] container md:flex md:mx-auto justify-between ms-[20%] items-center pt-[32px] pb-[23px] sm:p-3">
+            <div className="md:mx-auto gap-[123px] md:container md:flex justify-between ms-[20%] items-center pt-[32px] pb-[23px] sm:p-3">
                 <div className="flex items-center gap-3">
                     {/* Close Button */}
                     <button 
@@ -103,7 +91,7 @@ const ProgressBarWithSteps = () => {
                 </div>
 
         {/* Progress Bar */}
-        <div className="relative flex-1 h-2 bg-gray-300 w-[527px] rounded-full">
+        <div className="relative flex-1 h-2 bg-gray-300 md:w-[527px] rounded-full">
           {/* Completed Steps */}
           <div
             className={`absolute h-2 bg-orange-500 rounded-full`}
@@ -112,7 +100,7 @@ const ProgressBarWithSteps = () => {
         </div>
 
         {/* Buttons to control the steps */}
-        <div className="flex gap-[15px]">
+        <div className="flex gap-[15px] mt-3 md:mt-0">
           <button
             onClick={goToPreviousStep}
             className="py-[8px] px-[25px] bg-[#FAFAFA] text-primary border-[1px] rounded-md"
@@ -133,8 +121,11 @@ const ProgressBarWithSteps = () => {
 
 
       {/* Step Content */}
-      <div className="mb-6 w-full max-w-lg">
+      <div className="container mx-auto justify-start  ">
+        <div>
+            <h1 className="text-[24px] font-bold" >Which of these best describes the incident?</h1>
         {renderStepContent()}
+        </div>
       </div>
     </div>
   );

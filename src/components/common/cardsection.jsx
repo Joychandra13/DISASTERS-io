@@ -36,3 +36,14 @@ export const NewIncidentCardSolution= ({ title, img, des}) => (
         </div>
     </div>
   );
+
+  export const IncidentIconCardSolution= ({ title, img }) => (
+    <div >
+        <div className="w-[180px] h-[69px] py-[22px] px-[20px] flex bg-[#F4F4F5] rounded-[10px] text-secondary hover:bg-button text-sm hover:text-white border-[1px]">
+            <img className="w-[25px] h-[25px]" src={img} alt= {title} />
+            <div className=" ms-2 ">
+                <h1 className="">{title}</h1>
+            </div>
+        </div>
+    </div>
+  );
