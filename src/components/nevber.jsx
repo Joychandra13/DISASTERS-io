@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { nevItems } from './lib/data'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './nav.css'
 
 
@@ -15,17 +15,17 @@ export const Nev = ()=> {
  return (
     <div>
         <nav className='bg-[#E4E4E780] py-[25px] overflow-hidden font-Onest'>
-            <div className='container md:mx-auto ms-[20%] md:flex justify-between items-center'>
+            <div className='container md:mx-auto ms-[5%] md:flex justify-between items-center'>
                 <img src="/logo1.png" alt="logo" className='w-[131px] h-[36px]'/>
 
                 <div>
                   <ul className="hidden lg:flex justify-center items-center gap-3 xl:gap-[35px]">
-                    <li className='nav-link'><Link to="/">Dashboard</Link></li>
-                    <li className='nav-link'><Link to="Incidents">Incidents</Link></li>
-                    <li className='nav-link'><Link to="Locations">Locations</Link></li>
-                    <li className='nav-link'><Link to="Activities">Activities</Link></li>
-                    <li className='nav-link'><Link to="Documents">Documents</Link></li>
-                    <li className='nav-link'><Link to="CypherAI">Cypher AI</Link></li>
+                    <li className='nav-link'><NavLink to="/">Dashboard</NavLink></li>
+                    <li className='nav-link'><NavLink to="Incidents">Incidents</NavLink></li>
+                    <li className='nav-link'><NavLink to="Locations">Locations</NavLink></li>
+                    <li className='nav-link'><NavLink to="Activities">Activities</NavLink></li>
+                    <li className='nav-link'><NavLink to="Documents">Documents</NavLink></li>
+                    <li className='nav-link'><NavLink to="CypherAI">Cypher AI</NavLink></li>
                   </ul>
                 </div>
                 
@@ -55,12 +55,12 @@ export const Nev = ()=> {
       {isOpen && (
         <div className="lg:hidden bg-white shadow-md">
                  <ul className="flex flex-col p-4 gap-3 xl:gap-[35px]">
-                    <li className='mobil-nav-link'><Link to="/">Dashboard</Link></li>
-                    <li className='mobil-nav-link'><Link to="Incidents">Incidents</Link></li>
-                    <li className='mobil-nav-link'><Link to="Locations">Locations</Link></li>
-                    <li className='mobil-nav-link'><Link to="Activities">Activities</Link></li>
-                    <li className='mobil-nav-link'><Link to="Documents">Documents</Link></li>
-                    <li className='mobil-nav-link'><Link to="CypherAI">Cypher AI</Link></li>
+                    <li className='mobil-nav-link'><NavLink to="/">Dashboard</NavLink></li>
+                    <li className='mobil-nav-link'><NavLink to="Incidents">Incidents</NavLink></li>
+                    <li className='mobil-nav-link'><NavLink to="Locations">Locations</NavLink></li>
+                    <li className='mobil-nav-link'><NavLink to="Activities">Activities</NavLink></li>
+                    <li className='mobil-nav-link'><NavLink to="Documents">Documents</NavLink></li>
+                    <li className='mobil-nav-link'><NavLink to="CypherAI">Cypher AI</NavLink></li>
                   </ul>
         </div>
       )}

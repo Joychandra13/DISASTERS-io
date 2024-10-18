@@ -84,10 +84,13 @@ export const IncidentIconCard = () => {
   return (
     <section className="pt-[15px]">
         <div >
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-[25px] md:w-[750px] justify-between container mx-auto">
+          <div className="">
+             <h1 className="text-[24px] font-bold mb-[25px]" >Which of these best describes the incident?</h1>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[11px] justify-between " >
           {IncidentIconCards.map((IncidentIconCard, i) => (
-            <IncidentIconCardSolution key={i} {...IncidentIconCard} />
+            <IncidentIconCardSolution  key={i} {...IncidentIconCard} />
           ))}
+        </div>
         </div>
         </div>
     </section>

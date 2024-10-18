@@ -3,13 +3,12 @@ import Search from '../components/common/searchincident'
 import { Button } from '../components/common/button'
 import { Card } from '../components/common/card'
 import { Link } from 'react-router-dom';
-import ProgressBar from './subpage.jsx/progress bar';
 function Incidents() {
 
   return (
-    <div>
-      <div className='bg-[#E4E4E780] overflow-hidden font-Onest'>
-      <div className='container md:flex md:mx-auto justify-between ms-[20%] items-center pt-[32px] pb-[23px] sm:p-3'>
+    <div className='p-5 md:p-0 font-Onest'>
+      <div className='bg-[#E4E4E780] overflow-hidden font-Onest p-5 md:p-0 border rounded-md md:border-none md:rounded-none'>
+      <div className='container md:flex md:mx-auto justify-between ms-[5%] items-center pt-[32px] pb-[23px] sm:p-3'>
       <div className='pb-[13px] md:p-0'>
         <p className='text-secondary'>Home - Incidents</p>
         <h1 className='text-[26px] font-bold font-Onest'>Incidents</h1>
@@ -21,7 +20,6 @@ function Incidents() {
       </div>
       </div>
       <Card/>
-      <ProgressBar/>
     </div>
   )
 }

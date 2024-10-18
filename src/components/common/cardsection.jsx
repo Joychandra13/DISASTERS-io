@@ -1,6 +1,6 @@
 export const CardSolution= ({ title, img, des, money }) => (
     <div >
-        <div className="pt-[35px]">
+        <div className="pt-[35px] transition-transform duration-300 ease-in-out transform hover:p-6 hover:rounded-md hover:scale-105 hover:shadow-md">
             <img src={img} alt= {title} />
             <div className="mt-[20px]">
                 <h1 className="font-bold text-[16px] text-primary">{title}</h1>
@@ -13,7 +13,7 @@ export const CardSolution= ({ title, img, des, money }) => (
 
 export const NewIncidentCardSolution= ({ title, img, des}) => (
     <div >
-        <div className="pt-[35px] mx-auto mt-3 w-[235px] h-[300px] rounded-[10px] border-[1px] py-[25px] px-[20px] bg-[#F4F4F5]">
+        <div className="pt-[35px] mx-auto mt-5 w-[235px] h-[300px] rounded-[10px] border-[1px] py-[25px] px-[20px] bg-[#F4F4F5] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
             <img src={img} alt= {title} />
             <div className="mt-[68px] w-[195px] h-[95px]">
                 <h1 className="font-bold text-[16px] text-primary mb-[22px] w-[170px]">{title}</h1>
@@ -26,7 +26,7 @@ export const NewIncidentCardSolution= ({ title, img, des}) => (
 
   export const ActivitiesCardSolution= ({ title, img, des, money }) => (
     <div >
-        <div className="mt-4 py-[15px] px-[10px] flex bg-[#F4F4F5] rounded-[10px]">
+        <div className="mt-4 py-[15px] px-[10px] flex bg-[#F4F4F5] border rounded-[10px] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
             <img src={img} alt= {title} />
             <div className="ms-[20px] ">
                 <h1 className="font-bold text-[16px] text-primary">{title}</h1>
@@ -39,10 +39,10 @@ export const NewIncidentCardSolution= ({ title, img, des}) => (
 
   export const IncidentIconCardSolution= ({ title, img }) => (
     <div >
-        <div className="w-[180px] h-[69px] py-[22px] px-[20px] flex bg-[#F4F4F5] rounded-[10px] text-secondary hover:bg-button text-sm hover:text-white border-[1px]">
+        <div className="w-[180px] h-[69px] py-[22px] px-[20px] flex bg-[#F4F4F5] rounded-[10px] text-secondary hover:bg-button text-sm hover:text-white border-[1px] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
             <img className="w-[25px] h-[25px]" src={img} alt= {title} />
             <div className=" ms-2 ">
-                <h1 className="">{title}</h1>
+                <h1 className="text-[12px]">{title}</h1>
             </div>
         </div>
     </div>

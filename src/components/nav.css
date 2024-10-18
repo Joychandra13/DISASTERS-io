@@ -1,16 +1,20 @@
 .nav-link {
-    @apply relative text-secondary text-sm no-underline hover:font-bold hover:text-primary ;
+    @apply relative text-secondary text-sm ;
   }
   
-  .nav-link::after {
-    content: '';
-    @apply absolute left-0 bottom-0 top-16 w-0 h-[3px] bg-black transition-all duration-300 ease-in-out;
-  }
-  
-  .nav-link:hover::after {
-    @apply w-full;
-  }
-
   .mobil-nav-link{
-    @apply relative text-secondary text-sm no-underline hover:font-bold hover:text-primary ;
+    @apply relative text-secondary text-sm ;
   }
+.active {
+  color: black;
+  font-weight: 700;
+  border-bottom: 4px solid black;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1025px) { 
+  .active {
+    border-bottom: none; 
+    padding-bottom: 0; 
+  }
+}
