@@ -82,15 +82,15 @@ const ProgressBarWithSteps = () => {
                         <img
                         src="/Frame.png"
                         alt="Search Icon"
-                        className="absolute left-3 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px]"
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px]"
                         />
                         <input
                         type="text"
                         placeholder="Enter incident address or GPS"
-                        className="w-full py-2 ps-[33px]  text-sm border-[#E4E4E7] bg-white rounded-[6px] focus:outline-none"
+                        className="w-full py-2 ps-[33px] pe-2 text-sm border-[#E4E4E7] bg-white rounded-[6px] focus:outline-none"
                         />
                    </div>
-                   <div className="absolute ms-[10px] mt-[55px] w-[230px] h-[42px] rounded-[6px] ">
+                   <div className="absolute ms-[10px] mt-[55px] w-[230px] h-[42px] rounded-[6px]">
                         <img
                         src="/Frame.png"
                         alt="Search Icon"
@@ -99,7 +99,7 @@ const ProgressBarWithSteps = () => {
                         <input
                         type="text"
                         placeholder="Pinpoint damage"
-                        className="w-full py-2 ps-[33px] text-sm border-[#E4E4E7] bg-white rounded-[6px] focus:outline-none"
+                        className="w-full py-2 ps-[33px] pe-2 text-sm border-[#E4E4E7] bg-white rounded-[6px] focus:outline-none"
                         />
                     </div>
                 </div>   
@@ -145,13 +145,13 @@ const ProgressBarWithSteps = () => {
           <div className="flex gap-[15px] mt-3 md:mt-0">
             <button
               onClick={goToPreviousStep}
-              className="py-[8px] px-[25px] w-[139px] bg-[#FAFAFA] text-primary border-[1px] rounded-md"
+              className="py-[8px] px-[25px] w-[139px] text-sm bg-[#FAFAFA] text-primary border-[1px] rounded-md"
             >
               {currentStep === 1 ? "Back " : "Back"}
             </button>
             <button
               onClick={currentStep === 3 ? handleFinish : goToNextStep}
-              className="py-[8px] px-[25px] w-[139px] bg-orange-500 text-white rounded-md"
+              className="py-[8px] px-[25px] w-[139px] bg-orange-500 text-sm text-white rounded-md"
             >
               {currentStep === 3 ? "Finish" : "Next step"}
             </button>
