@@ -8,8 +8,8 @@
 .active {
   color: black;
   font-weight: 700;
-  border-bottom: 4px solid black;
-  padding-bottom: 40px;
+  border-bottom: solid;
+  padding-bottom: 35px;
 }
 
 @media (max-width: 1025px) { 

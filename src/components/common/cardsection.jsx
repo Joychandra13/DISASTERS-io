@@ -26,7 +26,7 @@ export const NewIncidentCardSolution= ({ title, img, des}) => (
 
   export const ActivitiesCardSolution= ({ title, img, des, money }) => (
     <div >
-        <div className="mt-4 py-[15px] px-[10px] flex bg-[#F4F4F5] border rounded-[10px] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
+        <div className="mt-4 max-w-full] py-[15px] px-[10px] flex bg-[#F4F4F5] border rounded-[10px] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
             <img src={img} alt= {title} />
             <div className="ms-[20px] ">
                 <h1 className="font-bold text-[16px] text-primary">{title}</h1>
@@ -39,7 +39,7 @@ export const NewIncidentCardSolution= ({ title, img, des}) => (
 
   export const IncidentIconCardSolution= ({ title, img }) => (
     <div >
-        <div className="w-[180px] h-[69px] py-[22px] px-[20px] flex bg-[#F4F4F5] rounded-[10px] text-secondary hover:bg-button text-sm hover:text-white border-[1px] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
+        <div className="w-[180px] py-[22px] px-[20px] flex bg-[#F4F4F5] rounded-[10px] text-secondary hover:bg-button text-sm hover:text-white border-[1px] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
             <img className="w-[25px] h-[25px]" src={img} alt= {title} />
             <div className=" ms-2 ">
                 <h1 className="text-[12px]">{title}</h1>

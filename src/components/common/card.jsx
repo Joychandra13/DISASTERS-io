@@ -56,7 +56,7 @@ export const ActivitiesCard = () => {
   return (
     <section className="pt-[15px]">
         <div >
-        <div className=" place-items-center gap-5 lg:gap-[17.5px]">
+        <div className="gap-5 lg:gap-[17.5px]">
           {LocationsActivitiesCards.map((ActivitiesCard, i) => (
             <ActivitiesCardSolution key={i} {...ActivitiesCard} />
           ))}
@@ -70,7 +70,7 @@ export const DocumentsCard = () => {
   return (
     <section className="pt-[15px]">
         <div >
-        <div className="place-items-center gap-5 lg:gap-[17.5px]">
+        <div className="gap-5 lg:gap-[17.5px]">
           {LocationsDocumentsCards.map((DocumentsCard, i) => (
             <ActivitiesCardSolution key={i} {...DocumentsCard} />
           ))}

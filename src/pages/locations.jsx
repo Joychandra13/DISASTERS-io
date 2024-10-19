@@ -58,7 +58,9 @@ function Locations() {
                     <SmText><u>See all</u></SmText>
                 </div>
                 <ActivitiesCard/>
-                <hr className='my-[40px]' />
+            </div>
+            <div>
+            <hr className='my-[40px]' />
                 <div className='flex justify-between'>
                     <SmText className='text-primary font-bold'>Documents</SmText>
                     <SmText><u>See all</u></SmText>

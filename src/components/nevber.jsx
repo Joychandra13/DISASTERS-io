@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { nevItems } from './lib/data'
-import { NavLink,Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './nav.css'
 
 
@@ -14,22 +14,22 @@ export const Nev = ()=> {
 
  return (
     <div>
-        <nav className='bg-[#E4E4E780] py-[25px] overflow-hidden font-Onest'>
-            <div className='container md:mx-auto ms-[5%] md:flex justify-between items-center'>
+        <nav className='bg-[#E4E4E780] md:py-[25px] overflow-hidden font-Onest p-6 md:p-0'>
+            <div className='container mx-auto flex justify-between items-center'>
                 <Link to="/"><img src="/logo1.png" alt="logo" className='w-[131px] h-[36px]'/></Link>
 
                 <div>
                   <ul className="hidden lg:flex justify-center items-center gap-3 xl:gap-[35px]">
                     <li className='nav-link'><NavLink to="/">Dashboard</NavLink></li>
-                    <li className='nav-link'><NavLink to="Incidents">Incidents</NavLink></li>
-                    <li className='nav-link'><NavLink to="Locations">Locations</NavLink></li>
-                    <li className='nav-link'><NavLink to="Activities">Activities</NavLink></li>
-                    <li className='nav-link'><NavLink to="Documents">Documents</NavLink></li>
-                    <li className='nav-link'><NavLink to="CypherAI">Cypher AI</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Incidents">Incidents</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Locations">Locations</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Activities">Activities</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Documents">Documents</NavLink></li>
+                    <li className='nav-link'><NavLink to="/CypherAI">Cypher AI</NavLink></li>
                   </ul>
                 </div>
                 
-<div className='flex gap-3 mt-3'>
+<div className='flex gap-3'>
       {/* Hamburger Menu for Mobile */}
         <div className="lg:hidden flex items-center">
             <button onClick={toggleMenu} className="focus:outline-none">
@@ -55,12 +55,12 @@ export const Nev = ()=> {
       {isOpen && (
         <div className="lg:hidden bg-white shadow-md">
                  <ul className="flex flex-col p-4 gap-3 xl:gap-[35px]">
-                    <li className='mobil-nav-link'><NavLink to="/">Dashboard</NavLink></li>
-                    <li className='mobil-nav-link'><NavLink to="Incidents">Incidents</NavLink></li>
-                    <li className='mobil-nav-link'><NavLink to="Locations">Locations</NavLink></li>
-                    <li className='mobil-nav-link'><NavLink to="Activities">Activities</NavLink></li>
-                    <li className='mobil-nav-link'><NavLink to="Documents">Documents</NavLink></li>
-                    <li className='mobil-nav-link'><NavLink to="CypherAI">Cypher AI</NavLink></li>
+                    <li className='nav-link'><NavLink to="/">Dashboard</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Incidents">Incidents</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Locations">Locations</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Activities">Activities</NavLink></li>
+                    <li className='nav-link'><NavLink to="/Documents">Documents</NavLink></li>
+                    <li className='nav-link'><NavLink to="/CypherAI">Cypher AI</NavLink></li>
                   </ul>
         </div>
       )}
